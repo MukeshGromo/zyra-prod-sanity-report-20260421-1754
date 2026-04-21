@@ -660,35 +660,31 @@ Request: POST https://zyra-facade.heyzyra.ai/api/v1/auth/otp/generate
 
 Headers:
 Content-Type: application/json
-authorization:
-
-Body:
-{"purpose":"login","authMethod":"email_otp","email":"cmukesh391@gmail.com"}</pre></details><details style='margin-top:8px;'><summary style='cursor:pointer;font-weight:600;'>Show Response</summary><pre style='margin-top:10px;background:#0a111a;color:#dde7f2;padding:14px;border-radius:8px;white-space:pre-wrap;word-break:break-word;'>Timestamp: 2026-04-22 00:40:05.063
+authorization: [REDACTED]
+{"purpose":"login","authMethod":"email_otp","email":"[REDACTED]"}</pre></details><details style='margin-top:8px;'><summary style='cursor:pointer;font-weight:600;'>Show Response</summary><pre style='margin-top:10px;background:#0a111a;color:#dde7f2;padding:14px;border-radius:8px;white-space:pre-wrap;word-break:break-word;'>Timestamp: 2026-04-22 00:40:05.063
 Response: POST https://zyra-facade.heyzyra.ai/api/v1/auth/otp/generate
 Status: 200 OK
 
 Body:
-{"status":"success","statusCode":200,"data":{"message":"OTP Generated Successfully","details":{"otpPurpose":"login","resendCount":1,"maxResendCount":3,"resendWindowStartedAt":"2026-04-21T19:10:04.964Z","resendBlockedUntil":null,"otpFor":"email","deliveryStatus":"sent","otpId":"86483901-66ac-4688-a61d-2fbeb5ae36b6","otpValidTill":"2026-04-21T19:15:05.000Z","deliveryError":null,"consumedAt":null,"createdAt":"2026-04-21T19:10:04.975Z","updatedAt":"2026-04-21T19:10:04.975Z","otpStatus":"active","invalidAttemptsCount":0,"maxInvalidAttemptsCount":3,"retryAfterSeconds":0,"isResendBlocked":false}}}</pre></details></details><details style='margin-bottom:12px;border:1px solid #223047;border-radius:8px;background:#162131;padding:12px;'><summary style='cursor:pointer;font-weight:700;color:#e6edf3;'>02. Final valid: 02 otp/submit <span style="background:#153b27;color:#7ef0b1;padding:4px 8px;border-radius:999px;font-size:11px;margin-left:8px;">PASSED</span> <span style='color:#9fb0c3;margin-left:8px;'>200 OK</span></summary><div style='margin-top:12px;color:#c7d2e0;'>Request: <b>POST https://zyra-facade.heyzyra.ai/api/v1/auth/otp/submit</b></div><div style='margin-top:6px;margin-bottom:10px;color:#c7d2e0;'>Status: <b>200 OK</b></div><details style='margin-top:8px;'><summary style='cursor:pointer;font-weight:600;'>Show Request</summary><pre style='margin-top:10px;background:#0a111a;color:#dde7f2;padding:14px;border-radius:8px;white-space:pre-wrap;word-break:break-word;'>Timestamp: 2026-04-22 00:40:38.059
+{"status":"success","statusCode":200,"data":{"message":"OTP Generated Successfully","details":{"otpPurpose":"login","resendCount":1,"maxResendCount":3,"resendWindowStartedAt":"2026-04-21T19:10:04.964Z","resendBlockedUntil":null,"otpFor":"email","deliveryStatus":"sent","otpId":"[REDACTED]","otpValidTill":"2026-04-21T19:15:05.000Z","deliveryError":null,"consumedAt":null,"createdAt":"2026-04-21T19:10:04.975Z","updatedAt":"2026-04-21T19:10:04.975Z","otpStatus":"active","invalidAttemptsCount":0,"maxInvalidAttemptsCount":3,"retryAfterSeconds":0,"isResendBlocked":false}}}</pre></details></details><details style='margin-bottom:12px;border:1px solid #223047;border-radius:8px;background:#162131;padding:12px;'><summary style='cursor:pointer;font-weight:700;color:#e6edf3;'>02. Final valid: 02 otp/submit <span style="background:#153b27;color:#7ef0b1;padding:4px 8px;border-radius:999px;font-size:11px;margin-left:8px;">PASSED</span> <span style='color:#9fb0c3;margin-left:8px;'>200 OK</span></summary><div style='margin-top:12px;color:#c7d2e0;'>Request: <b>POST https://zyra-facade.heyzyra.ai/api/v1/auth/otp/submit</b></div><div style='margin-top:6px;margin-bottom:10px;color:#c7d2e0;'>Status: <b>200 OK</b></div><details style='margin-top:8px;'><summary style='cursor:pointer;font-weight:600;'>Show Request</summary><pre style='margin-top:10px;background:#0a111a;color:#dde7f2;padding:14px;border-radius:8px;white-space:pre-wrap;word-break:break-word;'>Timestamp: 2026-04-22 00:40:38.059
 Scenario: Final valid: 02 otp/submit | api: /api/v1/auth/otp/submit | request: POST | method-check: expected POST, sent POST (valid method) | expectation: valid flow should return 2xx
 Request: POST https://zyra-facade.heyzyra.ai/api/v1/auth/otp/submit
 
 Headers:
 Content-Type: application/json
-authorization:
-
-Body:
-{"otpId":"86483901-66ac-4688-a61d-2fbeb5ae36b6","purpose":"login","otp":"111308"}</pre></details><details style='margin-top:8px;'><summary style='cursor:pointer;font-weight:600;'>Show Response</summary><pre style='margin-top:10px;background:#0a111a;color:#dde7f2;padding:14px;border-radius:8px;white-space:pre-wrap;word-break:break-word;'>Timestamp: 2026-04-22 00:40:38.915
+authorization: [REDACTED]
+{"otpId":"[REDACTED]","purpose":"login","otp":"[REDACTED]"}</pre></details><details style='margin-top:8px;'><summary style='cursor:pointer;font-weight:600;'>Show Response</summary><pre style='margin-top:10px;background:#0a111a;color:#dde7f2;padding:14px;border-radius:8px;white-space:pre-wrap;word-break:break-word;'>Timestamp: 2026-04-22 00:40:38.915
 Response: POST https://zyra-facade.heyzyra.ai/api/v1/auth/otp/submit
 Status: 200 OK
 
 Body:
-{"status":"success","statusCode":200,"data":{"accessToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI4NTk3MGMxNi04ZTNkLTQ5ZjYtODBmZS1jOWVhMjRiOTQwN2MiLCJ0aW1lc3RhbXAiOjE3NzY3OTg2Mzg4NTUsImlhdCI6MTc3Njc5ODYzOH0.WuFYfn_D4a37TcAg_Ijatk8u0hE8mjo8oWnwh53OJJo","domainApplication":{"createdAt":"2025-07-15T12:35:56.104Z","updatedAt":"2025-07-17T12:13:57.105Z","applicationId":"01996fd9-f827-72b4-a130-0fd18bf6deb8","applicationName":"zyra","applicationKey":"e2ad819d-9ac8-44d0-90d4-f2a877f89b5b","applicationStatus":"ACTIVE","isPublicSignupAllowed":true,"isHierarchySupported":false,"sessionDuration":31536000,"domain":{"createdAt":"2025-07-15T12:35:22.691Z","updatedAt":"2025-09-22T05:18:23.163Z","domainId":"39a3583c-378d-4659-bf80-b01a1f0af553","domainName":"zyra","domainStatus":"active"}},"user":{"createdAt":"2025-12-01T07:02:51.948Z","updatedAt":"2026-04-14T04:14:35.000Z","userId":"85970c16-8e3d-49f6-80fe-c9ea24b9407c","username":null,"email":"cmukesh391@gmail.com","primaryMobile":"9000778885","isEmailVerified":true,"isMobileVerified":true,"status":"active","userMetadata":null,"isSocialUser":true,"socialUserType":"google","utmSource":"referral","utmData":"DAOYQYQI","platform":null,"referralId":"YXHY7HSI","socialId":"117807414505834481952","authPrimaryMethod":"google","lastLoginMethod":"email_otp","onboardingStage":"profile_completed","insuranceSegment":null,"mobileVerificationSkipsUsed":3,"mobileVerificationSkipLimit":3,"mobileVerifySkipsResetAt":"2026-04-13T10:57:58.000Z","mergedIntoUserId":null,"mergedAt":null,"archivedReason":null,"language":"en","zScoreStatus":"generated","zScoreSyncStatus":"succeeded","zScoreLastGeneratedAt":"2026-04-21T18:20:55.000Z","zScoreLastAttemptAt":"2026-04-21T18:17:23.000Z","zScoreLastAttemptError":null},"tokenId":"9474394b-de48-41bb-91cd-875d1da0c113","expiresAt":"2027-04-21T19:10:38.857Z","tokenMetadata":null,"id":10723,"createdAt":"2026-04-21T19:10:38.858Z","updatedAt":"2026-04-21T19:10:38.858Z","deletedAt":null,"revoked":false,"isNewUser":false,"onboardingStage":"profile_completed","mobileVerification":{"required":false,"mobileAlreadyVerified":false,"hasMobile":true,"hasVerifiedMobile":true,"existingUnverifiedMobile":null,"skipAllowed":true,"skipsUsed":0,"skipLimit":3,"noSkipReason":null,"linkedEmailMasked":"c****@gmail.com","linkedEmail":"cmukesh391@gmail.com","linkedAccountUserId":null,"linkedAccountAuthMethod":"google","linkedAccounts":[]}}}</pre></details></details><details style='margin-bottom:12px;border:1px solid #223047;border-radius:8px;background:#162131;padding:12px;'><summary style='cursor:pointer;font-weight:700;color:#e6edf3;'>03. Final valid: 03 tnc/user/consent-status <span style="background:#153b27;color:#7ef0b1;padding:4px 8px;border-radius:999px;font-size:11px;margin-left:8px;">PASSED</span> <span style='color:#9fb0c3;margin-left:8px;'>200 OK</span></summary><div style='margin-top:12px;color:#c7d2e0;'>Request: <b>POST https://zyra-facade.heyzyra.ai/api/v1/tnc/user/consent-status</b></div><div style='margin-top:6px;margin-bottom:10px;color:#c7d2e0;'>Status: <b>200 OK</b></div><details style='margin-top:8px;'><summary style='cursor:pointer;font-weight:600;'>Show Request</summary><pre style='margin-top:10px;background:#0a111a;color:#dde7f2;padding:14px;border-radius:8px;white-space:pre-wrap;word-break:break-word;'>Timestamp: 2026-04-22 00:40:38.924
+{"status":"success","statusCode":200,"data":{"accessToken":"[REDACTED]","domainApplication":{"createdAt":"2025-07-15T12:35:56.104Z","updatedAt":"2025-07-17T12:13:57.105Z","applicationId":"01996fd9-f827-72b4-a130-0fd18bf6deb8","applicationName":"zyra","applicationKey":"e2ad819d-9ac8-44d0-90d4-f2a877f89b5b","applicationStatus":"ACTIVE","isPublicSignupAllowed":true,"isHierarchySupported":false,"sessionDuration":31536000,"domain":{"createdAt":"2025-07-15T12:35:22.691Z","updatedAt":"2025-09-22T05:18:23.163Z","domainId":"39a3583c-378d-4659-bf80-b01a1f0af553","domainName":"zyra","domainStatus":"active"}},"user":{"createdAt":"2025-12-01T07:02:51.948Z","updatedAt":"2026-04-14T04:14:35.000Z","userId":"[REDACTED]","username":null,"email":"[REDACTED]","primaryMobile":"[REDACTED]","isEmailVerified":true,"isMobileVerified":true,"status":"active","userMetadata":null,"isSocialUser":true,"socialUserType":"google","utmSource":"referral","utmData":"[REDACTED]","platform":null,"referralId":"[REDACTED]","socialId":"[REDACTED]","authPrimaryMethod":"google","lastLoginMethod":"email_otp","onboardingStage":"profile_completed","insuranceSegment":null,"mobileVerificationSkipsUsed":3,"mobileVerificationSkipLimit":3,"mobileVerifySkipsResetAt":"2026-04-13T10:57:58.000Z","mergedIntoUserId":null,"mergedAt":null,"archivedReason":null,"language":"en","zScoreStatus":"generated","zScoreSyncStatus":"succeeded","zScoreLastGeneratedAt":"2026-04-21T18:20:55.000Z","zScoreLastAttemptAt":"2026-04-21T18:17:23.000Z","zScoreLastAttemptError":null},"tokenId":"[REDACTED]","expiresAt":"2027-04-21T19:10:38.857Z","tokenMetadata":null,"id":10723,"createdAt":"2026-04-21T19:10:38.858Z","updatedAt":"2026-04-21T19:10:38.858Z","deletedAt":null,"revoked":false,"isNewUser":false,"onboardingStage":"profile_completed","mobileVerification":{"required":false,"mobileAlreadyVerified":false,"hasMobile":true,"hasVerifiedMobile":true,"existingUnverifiedMobile":null,"skipAllowed":true,"skipsUsed":0,"skipLimit":3,"noSkipReason":null,"linkedEmailMasked":"c****@gmail.com","linkedEmail":"[REDACTED]","linkedAccountUserId":null,"linkedAccountAuthMethod":"google","linkedAccounts":[]}}}</pre></details></details><details style='margin-bottom:12px;border:1px solid #223047;border-radius:8px;background:#162131;padding:12px;'><summary style='cursor:pointer;font-weight:700;color:#e6edf3;'>03. Final valid: 03 tnc/user/consent-status <span style="background:#153b27;color:#7ef0b1;padding:4px 8px;border-radius:999px;font-size:11px;margin-left:8px;">PASSED</span> <span style='color:#9fb0c3;margin-left:8px;'>200 OK</span></summary><div style='margin-top:12px;color:#c7d2e0;'>Request: <b>POST https://zyra-facade.heyzyra.ai/api/v1/tnc/user/consent-status</b></div><div style='margin-top:6px;margin-bottom:10px;color:#c7d2e0;'>Status: <b>200 OK</b></div><details style='margin-top:8px;'><summary style='cursor:pointer;font-weight:600;'>Show Request</summary><pre style='margin-top:10px;background:#0a111a;color:#dde7f2;padding:14px;border-radius:8px;white-space:pre-wrap;word-break:break-word;'>Timestamp: 2026-04-22 00:40:38.924
 Scenario: Final valid: 03 tnc/user/consent-status | api: /api/v1/tnc/user/consent-status | request: POST | method-check: expected POST, sent POST (valid method) | expectation: valid flow should return 2xx
 Request: POST https://zyra-facade.heyzyra.ai/api/v1/tnc/user/consent-status
 
 Headers:
 Content-Type: application/json
-authorization: eyJhbG...OJJo
+authorization: [REDACTED]
 
 Body:
 {"channel":"web"}</pre></details><details style='margin-top:8px;'><summary style='cursor:pointer;font-weight:600;'>Show Response</summary><pre style='margin-top:10px;background:#0a111a;color:#dde7f2;padding:14px;border-radius:8px;white-space:pre-wrap;word-break:break-word;'>Timestamp: 2026-04-22 00:40:39.183
@@ -702,7 +698,7 @@ Request: POST https://zyra-facade.heyzyra.ai/api/v1/user/settings/email-sync/lis
 
 Headers:
 Content-Type: application/json
-authorization: eyJhbG...OJJo
+authorization: [REDACTED]
 
 Body:
 &lt;empty&gt;</pre></details><details style='margin-top:8px;'><summary style='cursor:pointer;font-weight:600;'>Show Response</summary><pre style='margin-top:10px;background:#0a111a;color:#dde7f2;padding:14px;border-radius:8px;white-space:pre-wrap;word-break:break-word;'>Timestamp: 2026-04-22 00:40:40.331
@@ -710,13 +706,13 @@ Response: POST https://zyra-facade.heyzyra.ai/api/v1/user/settings/email-sync/li
 Status: 200 OK
 
 Body:
-{"status":"success","statusCode":200,"data":{"success":true,"isError":false,"message":"Accounts retrieved successfully","errorCode":null,"accounts":[{"accountId":"103555405517828864475","provider":"gmail","emailId":"shaik.ali@heyzyra.ai","lastSyncedAt":"2026-04-15T17:36:32.000Z","nextScanAt":"2026-04-22T12:06:33","createdAt":"2026-04-01T11:15:24","updatedAt":"2026-04-15T12:06:33","periodicEnabled":true,"errorCount":0,"isAuthenticated":true,"dailyLimitExceeded":false,"scanRunning":false,"isError":false,"errorMessage":null},{"accountId":"117807414505834481952","provider":"gmail","emailId":"cmukesh391@gmail.com","lastSyncedAt":"2026-04-14T10:40:30.000Z","nextScanAt":"2026-05-14T05:10:30","createdAt":"2025-12-01T07:04:38","updatedAt":"2026-04-14T05:10:30","periodicEnabled":true,"errorCount":0,"isAuthenticated":true,"dailyLimitExceeded":false,"scanRunning":false,"isError":false,"errorMessage":null}]}}</pre></details></details><details style='margin-bottom:12px;border:1px solid #223047;border-radius:8px;background:#162131;padding:12px;'><summary style='cursor:pointer;font-weight:700;color:#e6edf3;'>05. Final valid: 05 events/pending <span style="background:#153b27;color:#7ef0b1;padding:4px 8px;border-radius:999px;font-size:11px;margin-left:8px;">PASSED</span> <span style='color:#9fb0c3;margin-left:8px;'>200 OK</span></summary><div style='margin-top:12px;color:#c7d2e0;'>Request: <b>POST https://zyra-facade.heyzyra.ai/api/v1/events/pending</b></div><div style='margin-top:6px;margin-bottom:10px;color:#c7d2e0;'>Status: <b>200 OK</b></div><details style='margin-top:8px;'><summary style='cursor:pointer;font-weight:600;'>Show Request</summary><pre style='margin-top:10px;background:#0a111a;color:#dde7f2;padding:14px;border-radius:8px;white-space:pre-wrap;word-break:break-word;'>Timestamp: 2026-04-22 00:40:40.333
+{"status":"success","statusCode":200,"data":{"success":true,"isError":false,"message":"Accounts retrieved successfully","errorCode":null,"accounts":[{"accountId":"[REDACTED]","provider":"gmail","emailId":"[REDACTED]","lastSyncedAt":"2026-04-15T17:36:32.000Z","nextScanAt":"2026-04-22T12:06:33","createdAt":"2026-04-01T11:15:24","updatedAt":"2026-04-15T12:06:33","periodicEnabled":true,"errorCount":0,"isAuthenticated":true,"dailyLimitExceeded":false,"scanRunning":false,"isError":false,"errorMessage":null},{"accountId":"[REDACTED]","provider":"gmail","emailId":"[REDACTED]","lastSyncedAt":"2026-04-14T10:40:30.000Z","nextScanAt":"2026-05-14T05:10:30","createdAt":"2025-12-01T07:04:38","updatedAt":"2026-04-14T05:10:30","periodicEnabled":true,"errorCount":0,"isAuthenticated":true,"dailyLimitExceeded":false,"scanRunning":false,"isError":false,"errorMessage":null}]}}</pre></details></details><details style='margin-bottom:12px;border:1px solid #223047;border-radius:8px;background:#162131;padding:12px;'><summary style='cursor:pointer;font-weight:700;color:#e6edf3;'>05. Final valid: 05 events/pending <span style="background:#153b27;color:#7ef0b1;padding:4px 8px;border-radius:999px;font-size:11px;margin-left:8px;">PASSED</span> <span style='color:#9fb0c3;margin-left:8px;'>200 OK</span></summary><div style='margin-top:12px;color:#c7d2e0;'>Request: <b>POST https://zyra-facade.heyzyra.ai/api/v1/events/pending</b></div><div style='margin-top:6px;margin-bottom:10px;color:#c7d2e0;'>Status: <b>200 OK</b></div><details style='margin-top:8px;'><summary style='cursor:pointer;font-weight:600;'>Show Request</summary><pre style='margin-top:10px;background:#0a111a;color:#dde7f2;padding:14px;border-radius:8px;white-space:pre-wrap;word-break:break-word;'>Timestamp: 2026-04-22 00:40:40.333
 Scenario: Final valid: 05 events/pending | api: /api/v1/events/pending | request: POST | method-check: expected POST, sent POST (valid method) | expectation: valid flow should return 2xx
 Request: POST https://zyra-facade.heyzyra.ai/api/v1/events/pending
 
 Headers:
 Content-Type: application/json
-authorization: eyJhbG...OJJo
+authorization: [REDACTED]
 
 Body:
 {}</pre></details><details style='margin-top:8px;'><summary style='cursor:pointer;font-weight:600;'>Show Response</summary><pre style='margin-top:10px;background:#0a111a;color:#dde7f2;padding:14px;border-radius:8px;white-space:pre-wrap;word-break:break-word;'>Timestamp: 2026-04-22 00:40:40.758
@@ -730,7 +726,7 @@ Request: GET https://zyra-facade.heyzyra.ai/api/v1/profile/home/insights
 
 Headers:
 Content-Type: application/json
-authorization: eyJhbG...OJJo
+authorization: [REDACTED]
 
 Body:
 &lt;empty&gt;</pre></details><details style='margin-top:8px;'><summary style='cursor:pointer;font-weight:600;'>Show Response</summary><pre style='margin-top:10px;background:#0a111a;color:#dde7f2;padding:14px;border-radius:8px;white-space:pre-wrap;word-break:break-word;'>Timestamp: 2026-04-22 00:40:41.229
@@ -744,7 +740,7 @@ Request: GET https://zyra-facade.heyzyra.ai/api/v1/profile/analysis-history?limi
 
 Headers:
 Content-Type: application/json
-authorization: eyJhbG...OJJo
+authorization: [REDACTED]
 
 Body:
 &lt;empty&gt;</pre></details><details style='margin-top:8px;'><summary style='cursor:pointer;font-weight:600;'>Show Response</summary><pre style='margin-top:10px;background:#0a111a;color:#dde7f2;padding:14px;border-radius:8px;white-space:pre-wrap;word-break:break-word;'>Timestamp: 2026-04-22 00:40:41.723
@@ -758,7 +754,7 @@ Request: GET https://zyra-facade.heyzyra.ai/api/v1/actions/pending
 
 Headers:
 Content-Type: application/json
-authorization: eyJhbG...OJJo
+authorization: [REDACTED]
 
 Body:
 &lt;empty&gt;</pre></details><details style='margin-top:8px;'><summary style='cursor:pointer;font-weight:600;'>Show Response</summary><pre style='margin-top:10px;background:#0a111a;color:#dde7f2;padding:14px;border-radius:8px;white-space:pre-wrap;word-break:break-word;'>Timestamp: 2026-04-22 00:40:42.013
@@ -772,7 +768,7 @@ Request: GET https://zyra-facade.heyzyra.ai/api/v1/profile/analysis-progress
 
 Headers:
 Content-Type: application/json
-authorization: eyJhbG...OJJo
+authorization: [REDACTED]
 
 Body:
 &lt;empty&gt;</pre></details><details style='margin-top:8px;'><summary style='cursor:pointer;font-weight:600;'>Show Response</summary><pre style='margin-top:10px;background:#0a111a;color:#dde7f2;padding:14px;border-radius:8px;white-space:pre-wrap;word-break:break-word;'>Timestamp: 2026-04-22 00:40:42.470
@@ -780,13 +776,13 @@ Response: GET https://zyra-facade.heyzyra.ai/api/v1/profile/analysis-progress
 Status: 200 OK
 
 Body:
-{"status":"success","statusCode":200,"data":{"jobs":[{"jobId":"a94cc099-77c2-4a61-abd1-deca896bae0f","type":"UPLOAD","fileName":"Care Health_66871045.pdf","steps":[{"id":"validation","label":"Validation In Progress","status":"completed"},{"id":"analysis","label":"Analyzing Policy","status":"completed"},{"id":"classifying","label":"Classifying Family Members","status":"completed"},{"id":"recommendations","label":"Generating Recommendations &amp; ZScore","status":"completed"}],"completedPoints":4,"totalPoints":4,"currentStepLabel":"Generating Recommendations &amp; ZScore","startedAt":"2026-04-21T18:14:29"},{"jobId":"bd313081-2088-443a-be36-400fc5646df5","type":"UPLOAD","fileName":"Aditya Birla Health_31-25-0463302-00.pdf","steps":[{"id":"validation","label":"Validation In Progress","status":"completed"},{"id":"analysis","label":"Analyzing Policy","status":"completed"},{"id":"classifying","label":"Classifying Family Members","status":"completed"},{"id":"recommendations","label":"Generating Recommendations &amp; ZScore","status":"completed"}],"completedPoints":4,"totalPoints":4,"currentStepLabel":"Generating Recommendations &amp; ZScore","startedAt":"2026-04-21T13:13:37"}]}}</pre></details></details><details style='margin-bottom:12px;border:1px solid #223047;border-radius:8px;background:#162131;padding:12px;'><summary style='cursor:pointer;font-weight:700;color:#e6edf3;'>10. Final valid: 10 profile/list/all <span style="background:#153b27;color:#7ef0b1;padding:4px 8px;border-radius:999px;font-size:11px;margin-left:8px;">PASSED</span> <span style='color:#9fb0c3;margin-left:8px;'>200 OK</span></summary><div style='margin-top:12px;color:#c7d2e0;'>Request: <b>POST https://zyra-facade.heyzyra.ai/api/v1/profile/list/all</b></div><div style='margin-top:6px;margin-bottom:10px;color:#c7d2e0;'>Status: <b>200 OK</b></div><details style='margin-top:8px;'><summary style='cursor:pointer;font-weight:600;'>Show Request</summary><pre style='margin-top:10px;background:#0a111a;color:#dde7f2;padding:14px;border-radius:8px;white-space:pre-wrap;word-break:break-word;'>Timestamp: 2026-04-22 00:40:42.471
+{"status":"success","statusCode":200,"data":{"jobs":[{"jobId":"a94cc099-77c2-4a61-abd1-deca896bae0f","type":"UPLOAD","fileName":"[REDACTED].pdf","steps":[{"id":"validation","label":"Validation In Progress","status":"completed"},{"id":"analysis","label":"Analyzing Policy","status":"completed"},{"id":"classifying","label":"Classifying Family Members","status":"completed"},{"id":"recommendations","label":"Generating Recommendations &amp; ZScore","status":"completed"}],"completedPoints":4,"totalPoints":4,"currentStepLabel":"Generating Recommendations &amp; ZScore","startedAt":"2026-04-21T18:14:29"},{"jobId":"bd313081-2088-443a-be36-400fc5646df5","type":"UPLOAD","fileName":"[REDACTED].pdf","steps":[{"id":"validation","label":"Validation In Progress","status":"completed"},{"id":"analysis","label":"Analyzing Policy","status":"completed"},{"id":"classifying","label":"Classifying Family Members","status":"completed"},{"id":"recommendations","label":"Generating Recommendations &amp; ZScore","status":"completed"}],"completedPoints":4,"totalPoints":4,"currentStepLabel":"Generating Recommendations &amp; ZScore","startedAt":"2026-04-21T13:13:37"}]}}</pre></details></details><details style='margin-bottom:12px;border:1px solid #223047;border-radius:8px;background:#162131;padding:12px;'><summary style='cursor:pointer;font-weight:700;color:#e6edf3;'>10. Final valid: 10 profile/list/all <span style="background:#153b27;color:#7ef0b1;padding:4px 8px;border-radius:999px;font-size:11px;margin-left:8px;">PASSED</span> <span style='color:#9fb0c3;margin-left:8px;'>200 OK</span></summary><div style='margin-top:12px;color:#c7d2e0;'>Request: <b>POST https://zyra-facade.heyzyra.ai/api/v1/profile/list/all</b></div><div style='margin-top:6px;margin-bottom:10px;color:#c7d2e0;'>Status: <b>200 OK</b></div><details style='margin-top:8px;'><summary style='cursor:pointer;font-weight:600;'>Show Request</summary><pre style='margin-top:10px;background:#0a111a;color:#dde7f2;padding:14px;border-radius:8px;white-space:pre-wrap;word-break:break-word;'>Timestamp: 2026-04-22 00:40:42.471
 Scenario: Final valid: 10 profile/list/all | api: /api/v1/profile/list/all | request: POST | method-check: expected POST, sent POST (valid method) | expectation: valid flow should return 2xx
 Request: POST https://zyra-facade.heyzyra.ai/api/v1/profile/list/all
 
 Headers:
 Content-Type: application/json
-authorization: eyJhbG...OJJo
+authorization: [REDACTED]
 
 Body:
 {}</pre></details><details style='margin-top:8px;'><summary style='cursor:pointer;font-weight:600;'>Show Response</summary><pre style='margin-top:10px;background:#0a111a;color:#dde7f2;padding:14px;border-radius:8px;white-space:pre-wrap;word-break:break-word;'>Timestamp: 2026-04-22 00:40:42.703
@@ -794,13 +790,13 @@ Response: POST https://zyra-facade.heyzyra.ai/api/v1/profile/list/all
 Status: 200 OK
 
 Body:
-{"status":"success","statusCode":200,"data":{"details":[{"heading":"Your Details","data":[{"image":"https://fastly.picsum.photos/id/741/800/800.jpg?hmac=_wL7TULpLEfY9nHYHolqnVd3Z0xR6QKRq-dtapzx8lw","title":"Personal Details","cta":"personal-profile"},{"image":"https://fastly.picsum.photos/id/654/800/800.jpg?hmac=gi-ImBCSXApw0arnugXoCa9IJ2qcmdxleEjzIcUNHfw","title":"Health Details","cta":"health-profile"}]},{"heading":"Insurance Details","data":[{"image":"https://fastly.picsum.photos/id/723/800/800.jpg?hmac=o6MKSQPG7pqW1sxulI8DTJdvZHfus6qztbn0rffBuXU","title":"All Policies","cta":"policy-list"},{"image":"https://fastly.picsum.photos/id/921/800/800.jpg?hmac=yj41mzuAAUkiyrVna4OwSQyF6UuBgiviPPcNq4EV4UY","title":"Family Members","cta":"family-member-list"}]}],"fullName":"C Mukesh","completionPercentage":75,"pendingVerifications":[{"title":"Financial Details","subTitle":"Add your financial details to complete your profile","cta":{"type":"FINANCIAL_DETAILS"},"type":"user-profile"}],"gender":"male","userId":"85970c16-8e3d-49f6-80fe-c9ea24b9407c"}}</pre></details></details><details style='margin-bottom:12px;border:1px solid #223047;border-radius:8px;background:#162131;padding:12px;'><summary style='cursor:pointer;font-weight:700;color:#e6edf3;'>11. Final valid: 11 profile/get <span style="background:#153b27;color:#7ef0b1;padding:4px 8px;border-radius:999px;font-size:11px;margin-left:8px;">PASSED</span> <span style='color:#9fb0c3;margin-left:8px;'>200 OK</span></summary><div style='margin-top:12px;color:#c7d2e0;'>Request: <b>POST https://zyra-facade.heyzyra.ai/api/v1/profile/get</b></div><div style='margin-top:6px;margin-bottom:10px;color:#c7d2e0;'>Status: <b>200 OK</b></div><details style='margin-top:8px;'><summary style='cursor:pointer;font-weight:600;'>Show Request</summary><pre style='margin-top:10px;background:#0a111a;color:#dde7f2;padding:14px;border-radius:8px;white-space:pre-wrap;word-break:break-word;'>Timestamp: 2026-04-22 00:40:42.705
+{"status":"success","statusCode":200,"data":{"details":[{"heading":"Your Details","data":[{"image":"https://fastly.picsum.photos/id/741/800/800.jpg?hmac=_wL7TULpLEfY9nHYHolqnVd3Z0xR6QKRq-dtapzx8lw","title":"Personal Details","cta":"personal-profile"},{"image":"https://fastly.picsum.photos/id/654/800/800.jpg?hmac=gi-ImBCSXApw0arnugXoCa9IJ2qcmdxleEjzIcUNHfw","title":"Health Details","cta":"health-profile"}]},{"heading":"Insurance Details","data":[{"image":"https://fastly.picsum.photos/id/723/800/800.jpg?hmac=o6MKSQPG7pqW1sxulI8DTJdvZHfus6qztbn0rffBuXU","title":"All Policies","cta":"policy-list"},{"image":"https://fastly.picsum.photos/id/921/800/800.jpg?hmac=yj41mzuAAUkiyrVna4OwSQyF6UuBgiviPPcNq4EV4UY","title":"Family Members","cta":"family-member-list"}]}],"fullName":"[REDACTED]","completionPercentage":75,"pendingVerifications":[{"title":"Financial Details","subTitle":"Add your financial details to complete your profile","cta":{"type":"FINANCIAL_DETAILS"},"type":"user-profile"}],"gender":"male","userId":"[REDACTED]"}}</pre></details></details><details style='margin-bottom:12px;border:1px solid #223047;border-radius:8px;background:#162131;padding:12px;'><summary style='cursor:pointer;font-weight:700;color:#e6edf3;'>11. Final valid: 11 profile/get <span style="background:#153b27;color:#7ef0b1;padding:4px 8px;border-radius:999px;font-size:11px;margin-left:8px;">PASSED</span> <span style='color:#9fb0c3;margin-left:8px;'>200 OK</span></summary><div style='margin-top:12px;color:#c7d2e0;'>Request: <b>POST https://zyra-facade.heyzyra.ai/api/v1/profile/get</b></div><div style='margin-top:6px;margin-bottom:10px;color:#c7d2e0;'>Status: <b>200 OK</b></div><details style='margin-top:8px;'><summary style='cursor:pointer;font-weight:600;'>Show Request</summary><pre style='margin-top:10px;background:#0a111a;color:#dde7f2;padding:14px;border-radius:8px;white-space:pre-wrap;word-break:break-word;'>Timestamp: 2026-04-22 00:40:42.705
 Scenario: Final valid: 11 profile/get | api: /api/v1/profile/get | request: POST | method-check: expected POST, sent POST (valid method) | expectation: valid flow should return 2xx
 Request: POST https://zyra-facade.heyzyra.ai/api/v1/profile/get
 
 Headers:
 Content-Type: application/json
-authorization: eyJhbG...OJJo
+authorization: [REDACTED]
 
 Body:
 {}</pre></details><details style='margin-top:8px;'><summary style='cursor:pointer;font-weight:600;'>Show Response</summary><pre style='margin-top:10px;background:#0a111a;color:#dde7f2;padding:14px;border-radius:8px;white-space:pre-wrap;word-break:break-word;'>Timestamp: 2026-04-22 00:40:42.950
@@ -808,13 +804,13 @@ Response: POST https://zyra-facade.heyzyra.ai/api/v1/profile/get
 Status: 200 OK
 
 Body:
-{"status":"success","statusCode":200,"data":{"basicProfile":{"fullName":"C Mukesh","dob":"1995-07-26T00:00:00.000Z","age":30,"email":"cmukesh391@gmail.com","phone":"9000778885","phoneVerified":true,"gender":"male","married":false,"pincode":"155008","panNumber":"GZSPS4052M"},"financialProfile":{"annualIncome":0,"occupation":""},"healthProfile":{"alcohol":true,"smoker":true,"alcoholFrequency":"frequent_in_past","smokerFrequency":"frequent_in_past","diseases":[{"name":"diabetes","active":false,"displayName":"Diabetes"},{"name":"hypertension","active":false,"displayName":"Hypertension"},{"name":"asthma","active":false,"displayName":"Asthma"},{"name":"heart_disease","active":false,"displayName":"Heart Disease"},{"name":"thyroid","active":false,"displayName":"Thyroid"},{"name":"cancer","active":false,"displayName":"Cancer"},{"name":"other","active":true,"displayName":"Other","value":"Asthma"}]}}}</pre></details></details><details style='margin-bottom:12px;border:1px solid #223047;border-radius:8px;background:#162131;padding:12px;'><summary style='cursor:pointer;font-weight:700;color:#e6edf3;'>12. Final valid: 12 profile/health <span style="background:#153b27;color:#7ef0b1;padding:4px 8px;border-radius:999px;font-size:11px;margin-left:8px;">PASSED</span> <span style='color:#9fb0c3;margin-left:8px;'>201 Created</span></summary><div style='margin-top:12px;color:#c7d2e0;'>Request: <b>POST https://zyra-facade.heyzyra.ai/api/v1/profile/health</b></div><div style='margin-top:6px;margin-bottom:10px;color:#c7d2e0;'>Status: <b>201 Created</b></div><details style='margin-top:8px;'><summary style='cursor:pointer;font-weight:600;'>Show Request</summary><pre style='margin-top:10px;background:#0a111a;color:#dde7f2;padding:14px;border-radius:8px;white-space:pre-wrap;word-break:break-word;'>Timestamp: 2026-04-22 00:40:42.975
+{"status":"success","statusCode":200,"data":{"basicProfile":{"fullName":"[REDACTED]","dob":"[REDACTED]","age":30,"email":"[REDACTED]","phone":"[REDACTED]","phoneVerified":true,"gender":"male","married":false,"pincode":"[REDACTED]","panNumber":"[REDACTED]"},"financialProfile":{"annualIncome":0,"occupation":""},"healthProfile":{"alcohol":true,"smoker":true,"alcoholFrequency":"frequent_in_past","smokerFrequency":"frequent_in_past","diseases":[{"name":"diabetes","active":false,"displayName":"Diabetes"},{"name":"hypertension","active":false,"displayName":"Hypertension"},{"name":"asthma","active":false,"displayName":"Asthma"},{"name":"heart_disease","active":false,"displayName":"Heart Disease"},{"name":"thyroid","active":false,"displayName":"Thyroid"},{"name":"cancer","active":false,"displayName":"Cancer"},{"name":"other","active":true,"displayName":"Other","value":"Asthma"}]}}}</pre></details></details><details style='margin-bottom:12px;border:1px solid #223047;border-radius:8px;background:#162131;padding:12px;'><summary style='cursor:pointer;font-weight:700;color:#e6edf3;'>12. Final valid: 12 profile/health <span style="background:#153b27;color:#7ef0b1;padding:4px 8px;border-radius:999px;font-size:11px;margin-left:8px;">PASSED</span> <span style='color:#9fb0c3;margin-left:8px;'>201 Created</span></summary><div style='margin-top:12px;color:#c7d2e0;'>Request: <b>POST https://zyra-facade.heyzyra.ai/api/v1/profile/health</b></div><div style='margin-top:6px;margin-bottom:10px;color:#c7d2e0;'>Status: <b>201 Created</b></div><details style='margin-top:8px;'><summary style='cursor:pointer;font-weight:600;'>Show Request</summary><pre style='margin-top:10px;background:#0a111a;color:#dde7f2;padding:14px;border-radius:8px;white-space:pre-wrap;word-break:break-word;'>Timestamp: 2026-04-22 00:40:42.975
 Scenario: Final valid: 12 profile/health | api: /api/v1/profile/health | request: POST | method-check: expected POST, sent POST (valid method) | expectation: valid flow should return 2xx
 Request: POST https://zyra-facade.heyzyra.ai/api/v1/profile/health
 
 Headers:
 Content-Type: application/json
-authorization: eyJhbG...OJJo
+authorization: [REDACTED]
 
 Body:
 {"alcohol":true,"smoker":true,"chronicDiseasesJson":["Asthma"],"smokerFrequency":"frequent_in_past","alcoholFrequency":"frequent_in_past"}</pre></details><details style='margin-top:8px;'><summary style='cursor:pointer;font-weight:600;'>Show Response</summary><pre style='margin-top:10px;background:#0a111a;color:#dde7f2;padding:14px;border-radius:8px;white-space:pre-wrap;word-break:break-word;'>Timestamp: 2026-04-22 00:40:43.190
@@ -828,7 +824,7 @@ Request: POST https://zyra-facade.heyzyra.ai/api/v1/user/insurance/upload/policy
 
 Headers:
 Content-Type: multipart/form-data;boundary=UbkC3Mjok2XRgP2zizLf_pvZA-px2tZAKzhXq
-authorization: eyJhbG...OJJo
+authorization: [REDACTED]
 
 Body:
 &lt;binary body: 514869 bytes; content-type=multipart/form-data;boundary=UbkC3Mjok2XRgP2zizLf_pvZA-px2tZAKzhXq&gt;</pre></details><details style='margin-top:8px;'><summary style='cursor:pointer;font-weight:600;'>Show Response</summary><pre style='margin-top:10px;background:#0a111a;color:#dde7f2;padding:14px;border-radius:8px;white-space:pre-wrap;word-break:break-word;'>Timestamp: 2026-04-22 00:40:47.897
@@ -982,7 +978,7 @@ Base URL: https://zyra-facade.heyzyra.ai
 ║               PROD SANITY PHASE 1                     ║
 ╠════════════════════════════════════════════════════════╣
 ║ Environment: PROD                                     ║
-║ Email: cmukesh391@gmail.com                           ║
+║ Email      : [REDACTED]
 ╚════════════════════════════════════════════════════════╝
 
 <span style='color:#27ae60;font-weight:bold;font-size:16px;'>✅</span> otp/generate -&gt; 200 OK
@@ -1003,18 +999,18 @@ Using Temp Mail: true
 ╔════════════════════════════════════════════════════════╗
 ║              🤖 AUTOMATIC OTP RETRIEVAL                ║
 ╠════════════════════════════════════════════════════════╣
-║  <span style='color:#9b59b6;font-weight:bold;font-size:16px;'>📧</span> Email: cmukesh391@gmail.com                      ║
+║  <span style='color:#9b59b6;font-weight:bold;font-size:16px;'>📧</span> Email      : [REDACTED]
 ║  🔍 Checking DB-decrypted OTP first...                 ║
 ╚════════════════════════════════════════════════════════╝
 
-⏳ Waiting 30 seconds before DB OTP lookup for email: cmukesh391@gmail.com (attempt 1/4)
+⏳ Waiting 30 seconds before DB OTP lookup for Email      : [REDACTED]
 console.log(decryptData("6%2FJa0at0cCcJUKNkGeLIqA%3D%3D")) =&gt; "111308"
 <span style='color:#27ae60;font-weight:bold;font-size:16px;'>✅</span> Email OTP retrieved from DB on attempt 1/4
 
 ╔════════════════════════════════════════════════════════╗
 ║           <span style='color:#27ae60;font-weight:bold;font-size:16px;'>✅</span> OTP RETRIEVED FROM DB (DECRYPTED)         ║
 ╠════════════════════════════════════════════════════════╣
-║  <span style='color:#f39c12;font-weight:bold;font-size:16px;'>🔑</span> OTP: 111308                                         ║
+║  <span style='color:#f39c12;font-weight:bold;font-size:16px;'>🔑</span> OTP: [REDACTED]                                         ║
 ║  🗄️ Source: encrypted_otp via AES/CBC decrypt         ║
 ╚════════════════════════════════════════════════════════╝
 
@@ -1045,7 +1041,7 @@ console.log(decryptData("6%2FJa0at0cCcJUKNkGeLIqA%3D%3D")) =&gt; "111308"
 ╠════════════════════════════════════════════════════════╣
 ║  File Name:     Care Health_55971852.pdf              ║
 ║  File Size:     502.58 KB                             ║
-║  Email:         cmukesh391@gmail.com                  ║
+║  Email      : [REDACTED]
 ║  Type:          Health                                ║
 ╚════════════════════════════════════════════════════════╝
 
@@ -1057,7 +1053,7 @@ console.log(decryptData("6%2FJa0at0cCcJUKNkGeLIqA%3D%3D")) =&gt; "111308"
 ╠════════════════════════════════════════════════════════╣
 ║  File Name:     Care Health_55971852.pdf              ║
 ║  Status:        200 OK                                ║
-║  Email:         cmukesh391@gmail.com                  ║
+║  Email      : [REDACTED]
 ╚════════════════════════════════════════════════════════╝
 
 <span style='color:#6c757d;font-weight:bold;font-size:16px;'>📄</span> Response: {"status":"success","statusCode":200,"data":{"status":"ACCEPTED","message":"File accepted and upload started"}}
@@ -1068,9 +1064,9 @@ console.log(decryptData("6%2FJa0at0cCcJUKNkGeLIqA%3D%3D")) =&gt; "111308"
 ═══════════════════════════════════════════════════════
   PROD SANITY PHASE 1 COMPLETED SUCCESSFULLY
 ═══════════════════════════════════════════════════════
-Email      : cmukesh391@gmail.com
-OtpId      : 86483901-66ac-4688-a61d-2fbeb5ae36b6
-AccessToken: eyJhbGci...OJJo
+Email      : [REDACTED]
+OtpId      : [REDACTED]
+AccessToken: [REDACTED]
 ═══════════════════════════════════════════════════════
 
 <span style='color:#27ae60;font-weight:bold;font-size:16px;'>✅</span> TEST PASSED: executeProdSanityPhase1
@@ -1109,7 +1105,7 @@ Base URL: https://zyra-facade.heyzyra.ai
 ║               PROD SANITY PHASE 1                     ║
 ╠════════════════════════════════════════════════════════╣
 ║ Environment: PROD                                     ║
-║ Email: cmukesh391@gmail.com                           ║
+║ Email      : [REDACTED]
 ╚════════════════════════════════════════════════════════╝
 
 ✅ otp/generate -&gt; 200 OK
@@ -1130,18 +1126,18 @@ Using Temp Mail: true
 ╔════════════════════════════════════════════════════════╗
 ║              🤖 AUTOMATIC OTP RETRIEVAL                ║
 ╠════════════════════════════════════════════════════════╣
-║  📧 Email: cmukesh391@gmail.com                      ║
+║  📧 Email      : [REDACTED]
 ║  🔍 Checking DB-decrypted OTP first...                 ║
 ╚════════════════════════════════════════════════════════╝
 
-⏳ Waiting 30 seconds before DB OTP lookup for email: cmukesh391@gmail.com (attempt 1/4)
+⏳ Waiting 30 seconds before DB OTP lookup for Email      : [REDACTED]
 console.log(decryptData("6%2FJa0at0cCcJUKNkGeLIqA%3D%3D")) =&gt; "111308"
 ✅ Email OTP retrieved from DB on attempt 1/4
 
 ╔════════════════════════════════════════════════════════╗
 ║           ✅ OTP RETRIEVED FROM DB (DECRYPTED)         ║
 ╠════════════════════════════════════════════════════════╣
-║  🔑 OTP: 111308                                         ║
+║  🔑 OTP: [REDACTED]                                         ║
 ║  🗄️ Source: encrypted_otp via AES/CBC decrypt         ║
 ╚════════════════════════════════════════════════════════╝
 
@@ -1172,7 +1168,7 @@ console.log(decryptData("6%2FJa0at0cCcJUKNkGeLIqA%3D%3D")) =&gt; "111308"
 ╠════════════════════════════════════════════════════════╣
 ║  File Name:     Care Health_55971852.pdf              ║
 ║  File Size:     502.58 KB                             ║
-║  Email:         cmukesh391@gmail.com                  ║
+║  Email      : [REDACTED]
 ║  Type:          Health                                ║
 ╚════════════════════════════════════════════════════════╝
 
@@ -1184,7 +1180,7 @@ console.log(decryptData("6%2FJa0at0cCcJUKNkGeLIqA%3D%3D")) =&gt; "111308"
 ╠════════════════════════════════════════════════════════╣
 ║  File Name:     Care Health_55971852.pdf              ║
 ║  Status:        200 OK                                ║
-║  Email:         cmukesh391@gmail.com                  ║
+║  Email      : [REDACTED]
 ╚════════════════════════════════════════════════════════╝
 
 📄 Response: {"status":"success","statusCode":200,"data":{"status":"ACCEPTED","message":"File accepted and upload started"}}
@@ -1195,9 +1191,9 @@ console.log(decryptData("6%2FJa0at0cCcJUKNkGeLIqA%3D%3D")) =&gt; "111308"
 ═══════════════════════════════════════════════════════
   PROD SANITY PHASE 1 COMPLETED SUCCESSFULLY
 ═══════════════════════════════════════════════════════
-Email      : cmukesh391@gmail.com
-OtpId      : 86483901-66ac-4688-a61d-2fbeb5ae36b6
-AccessToken: eyJhbGci...OJJo
+Email      : [REDACTED]
+OtpId      : [REDACTED]
+AccessToken: [REDACTED]
 ═══════════════════════════════════════════════════════
 
 ✅ TEST PASSED: executeProdSanityPhase1
